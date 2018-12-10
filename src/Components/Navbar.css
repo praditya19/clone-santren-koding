@@ -1,0 +1,28 @@
+nav.navbar.navbar-expand-md.navbar-light.bg-light {
+    margin: 0 ; 
+    padding: 0 ;
+    height: 64px ;
+    font-size: 15px ;
+}
+
+a.btn.btn-outline-primary {
+    font-size: 15px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.santren {
+    font-size: 20px ;
+}
+
+.logo {
+width: 60px ;
+height: 50px;
+}
+
+nav.santren.navbar {
+    padding: 0 ;
+    margin: 0 ;
+    height: 64.20px ;
+}
