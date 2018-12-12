@@ -6,8 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,  } from 'reactstrap';
-import './Navbar.css'
+  NavLink
+} from 'reactstrap';
+import './Navbar.css';
 import logo from '../Assets/logo.png';
 
 export default class Example extends React.Component {
@@ -28,22 +29,47 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand><img className="logo"src={logo}/></NavbarBrand>
-          <Navbar className ="santren" href="#">Santren Koding</Navbar>
+          <NavbarBrand>
+            <img className="logo" src={logo} />
+          </NavbarBrand>
+          <Navbar
+            className="santren"
+            onClick={() => {
+              this.props.layout('Home');
+            }}>
+            Santren Koding
+          </Navbar>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Kajian Koding</NavLink>
+                <NavLink
+                  onClick={() => {
+                    this.props.layout('Kajian');
+                  }}>
+                  Kajian Koding
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink>Mondok Koding</NavLink>
+                <NavLink
+                  onClick={() => {
+                    this.props.layout('Mondok');
+                  }}>
+                  Mondok Koding
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink>Kitab Koding</NavLink>
+                <NavLink
+                  onClick={() => {
+                    this.props.layout('Kitab');
+                  }}>
+                  Kitab Koding
+                </NavLink>
               </NavItem>
               <NavItem>
-              <a class="btn btn-outline-primary" href="/login">Masuk/Daftar</a>
+                <a class="btn btn-outline-primary" href="/login">
+                  Masuk/Daftar
+                </a>
               </NavItem>
             </Nav>
           </Collapse>

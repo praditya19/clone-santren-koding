@@ -1,20 +1,17 @@
 .card {
-    display: flex ;
-    justify-content: space-between ;
-    flex-wrap: wrap ;
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card:hover {
-    box-shadow: 5px 10px #d3d3d3;
-
+  box-shadow: 5px 5px #c9c2c2;
 }
 
 .Rata {
-    padding-left: 200px;
-    padding-right: 200px;  
+  margin: 20px;
 }
 
-.kanan{
-    color: red;
-   
+.kanan {
+  color: red;
+  text-align: right;
 }

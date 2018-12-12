@@ -1,0 +1,18 @@
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  font-size: 15px;
+  color: white;
+}
+
+.col-md-5 {
+  color: black;
+  font-size: 13px;
+}
+
+.btn-btn-outline-success {
+  color: red;
+}
